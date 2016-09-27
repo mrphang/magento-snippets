@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+<?xml version="1.0"?>
+<!--
+/**
+ */
+-->
+<config>
+	<modules>
+		<${1:NS_Module}>
+			<active>${2:true}</active>
+			<codepool>${3:community}</codepool>
+		</${1}>
+	</modules>
+</config>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

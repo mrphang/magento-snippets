@@ -1,0 +1,42 @@
+<snippet>
+  <content><![CDATA[
+<?xml version="1.0"?>
+<!--
+/**
+ */
+-->
+<config>
+	<modules>
+		<${1:NS_Module}>
+			<version>${2:0.1.0}</version>
+		</${1}>
+	</modules>
+	<global>
+		<models>
+			<${3:module_alias}>
+				<class>${1}_Model</class>
+				<resourceModel>${4:${3}_resource}</resourceModel>
+			</${3}>
+			<${4}>
+				<class>${1}_Model_Resource</class>
+			</${4}>
+		</models>
+		<resources>
+			<${5:${3}_setup}>
+				<setup>
+					<module>${1}</module>
+				</setup>
+			</${5}>
+		</resources>
+	</global>
+	<default>
+		<${3}>
+		</${3}>
+	</default>
+</config>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <!-- <tabTrigger>hello</tabTrigger> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>
